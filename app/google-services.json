@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1090999110837",
+    "firebase_url": "https://exameniiambientemovil.firebaseio.com",
+    "project_id": "exameniiambientemovil",
+    "storage_bucket": "exameniiambientemovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090999110837:android:f65c0f06c71ef569",
+        "android_client_info": {
+          "package_name": "com.example.alejandroguerreroa.exameniiambientemovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090999110837-pp5n0nsf3cfav62legv47sk097mc6ju0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmoyO2YjR6mPihaDTT0__SnOoyZGI8OQc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
