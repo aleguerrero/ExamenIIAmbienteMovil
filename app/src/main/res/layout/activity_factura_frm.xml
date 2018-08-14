@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacturaFrm"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/factura"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/spCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spCliente"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/spProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/spProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/etCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCliente" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/cantidad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lvLista"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgregar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spProducto" />
+
+    <ListView
+        android:id="@+id/lvLista"
+        android:layout_width="0dp"
+        android:layout_height="191dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCantidad" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="236dp"
+        android:text="@string/total"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvTotal"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/_0"
+        app:layout_constraintBottom_toTopOf="@+id/btnPagar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/lvLista" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/pagar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/agregar_a_carrito"
+        app:layout_constraintBottom_toTopOf="@+id/lvLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/spProducto" />
+</android.support.constraint.ConstraintLayout>

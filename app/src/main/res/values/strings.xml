@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">ExamenIIAmbienteMovil</string>
+    <string name="app_name">ExamenII_AlejandroGuerreroA_AmbienteMovilVN</string>
+    <string name="button">Button</string>
+    <string name="agregar_cliente">Agregar Cliente</string>
+    <string name="nombre">Nombre</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="id">ID</string>
+    <string name="modificar">Modificar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="agregar_producto">Agregar Producto</string>
+    <string name="precio_de_venta">Precio de Venta</string>
+    <string name="factura">FACTURA</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="agregar_a_carrito">Agregar a Carrito</string>
+    <string name="total">Total</string>
+    <string name="_0">0</string>
+    <string name="pagar">Pagar</string>
+    <string name="agregar">Agregar</string>
+    <string name="listado_de_facturas">Listado de Facturas</string>
+    <string name="listado_de_productos">Listado de Productos</string>
+    <string name="listado_de_clientes">Listado de Clientes</string>
 </resources>
