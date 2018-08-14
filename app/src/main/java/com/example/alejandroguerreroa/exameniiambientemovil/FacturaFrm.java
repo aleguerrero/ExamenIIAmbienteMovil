@@ -196,24 +196,27 @@ public class FacturaFrm extends AppCompatActivity implements View.OnClickListene
                         String[] caracFila = adapter.getItem(i).toString().split(" - ");
 
                         //Se crea una factura
-                        Factura factura = new Factura();
-                        factura.cantidad = cantidadesXProducto.get(i);
-                        factura.cliente = caracCliente[0];
-                        factura.producto = caracFila[0];
+                        Factura factura = new Factura(caracFila[0], cantidadesXProducto.get(i));
 
                         //Se agrega a facturasPorComprar
                         facturas.add(factura);
                     }
 
-                    //Se crea un boolean que agregue las facturas a la tabla
+                    //Se crea la factura a guardar
+                    Factura factura =  new Factura(caracCliente[0], java.time.LocalDate.now().toString(), facturas);
 
+                    //Crea random key y agrega la factura
+                    mDB.child("facturas").push().setValue(factura);
 
-                    //Si funciona, muestra mensaje de éxito y cierra
-                    //si no, muestra que hubo un error
+                    //Muestra mensaje
+                    util_ui.MensajeToast(this, "Pagado con éxito");
+
+                    //cierra Facturas
+                    this.finish();
 
                     break;
                 } catch (Exception e) {
-                    util_ui.MensajeToast(this, "Hubo un error");
+                    util_ui.MensajeToast(this, "Hubo un error" + e.getMessage());
                     break;
                 }
         }
