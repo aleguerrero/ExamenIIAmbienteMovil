@@ -162,6 +162,7 @@ public class ClientesFrm extends AppCompatActivity implements View.OnClickListen
 
                     //Verifica que el cliente no exista
                     for (String cliente : listaClientes) {
+
                         //Toma el id
                         String[] textoCliente = cliente.split(" - ");
                         int idCliente = Integer.parseInt(textoCliente[0]);
